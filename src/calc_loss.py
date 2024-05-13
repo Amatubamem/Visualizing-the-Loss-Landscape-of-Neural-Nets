@@ -2,7 +2,7 @@ import torch
 import numpy as np
 import h5py
 import os
-from src.model.test_model import eval_loss
+from src.model.test_model import eval_loss_
 
 
 def calulate_loss_landscape(model, directions):
@@ -23,7 +23,7 @@ def calulate_loss_landscape(model, directions):
             coord = coords[count]
             overwrite_weights(model, init_weights, directions, coord)
 
-            loss, acc = eval_loss(model)
+            loss, acc = eval_loss_(model)
             print(loss, acc)
 
             losses.ravel()[ind] = loss

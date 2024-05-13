@@ -13,10 +13,10 @@ def visualize():
     vmin = 0
     vmax = 100
     vlevel = 0.5
-    result_file_path = "../result/3d_surface_file.h5"
+    result_file_path = "3d_surface_file.h5"
     surf_name = "test_loss"
 
-    with h5py.File("../3d_surface_file.h5",'r') as f:
+    with h5py.File("3d_surface_file.h5",'r') as f:
 
         Z_LIMIT = 10
 
