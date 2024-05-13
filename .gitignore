@@ -1,0 +1,11 @@
+# 拡張子なしのバイナリを除外する(必ず先頭に記述する！)
+*
+!*/
+!*.*
+
+
+.DS_Store
+*.gz
+/data/cifar-10-batches-py
+/src/__pycache__
+/src/model/__pycache__
